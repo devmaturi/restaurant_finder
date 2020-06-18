@@ -1,5 +1,7 @@
 import React from 'react';
 import { Layout, Menu, Breadcrumb } from 'antd';
+import { Link } from 'react-router-dom';
+
 const { Header, Content, Footer } = Layout;
 
 const CustomLayout = (props) => {
@@ -17,7 +19,6 @@ const CustomLayout = (props) => {
                 <Breadcrumb style={{ margin: '16px 0' }}>
                   <Breadcrumb.Item>Home</Breadcrumb.Item>
                   <Breadcrumb.Item>List</Breadcrumb.Item>
-                  <Breadcrumb.Item>App</Breadcrumb.Item>
                 </Breadcrumb>
                     <div className="site-layout-content" style={{background: '#fff', padding: '30px'}}>
                         {props.children}
