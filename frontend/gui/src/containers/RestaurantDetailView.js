@@ -11,7 +11,7 @@ class RestaurantDetail extends React.Component {
         Axios.get(`http://127.0.0.1:8000/api/${restaurantID}`)
         .then(res => {
             this.setState({
-                Restaurants: res.data
+                Restaurant: res.data
             });
         })
     }

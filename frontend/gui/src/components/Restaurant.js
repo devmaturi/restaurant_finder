@@ -21,11 +21,6 @@ const Restaurants = (props) => {
             pageSize: 3,
             }}
             dataSource={props.data}
-            footer={
-            <div>
-                <b>ant design</b> footer part
-            </div>
-            }
             renderItem={item => (
             <List.Item
                 key={item.title}
