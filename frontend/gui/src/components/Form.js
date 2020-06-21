@@ -2,8 +2,11 @@ import React from 'react';
 import { Form, Input, Button } from 'antd';
 
 const CustomForm = () => {
-const handleSubmit = (event) => {
 
+const handleSubmit = (e) => {
+    const title = e.target.elements.title.value;
+    const description = e.target.elements.description.value;
+    console.log(title, description);
 }
   return (
     <div>
