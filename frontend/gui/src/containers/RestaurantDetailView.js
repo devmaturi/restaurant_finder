@@ -1,6 +1,7 @@
 import React from 'react';
 import Axios from 'axios';
 import { Card } from 'antd';
+import CustomForm from '../components/Form';
 
 class RestaurantDetail extends React.Component {
     state = {
@@ -18,9 +19,13 @@ class RestaurantDetail extends React.Component {
     render(){
         const {title, description} = this.state.Restaurant;
         return (
-            <Card title={title}>
-                <p>{description}</p>
-            </Card>
+            <div>
+                <Card title={title}>
+                    <p>{description}</p>
+                </Card><br/>
+                <CustomForm/>
+            </div>
+
         );
     }
 }
