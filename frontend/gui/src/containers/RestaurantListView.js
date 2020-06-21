@@ -1,6 +1,7 @@
 import React from 'react';
 import Restaurants from '../components/Restaurant';
 import Axios from 'axios';
+import CustomForm from '../components/Form';
 
 class RestaurantList extends React.Component {
     state = {
@@ -16,7 +17,12 @@ class RestaurantList extends React.Component {
     }
     render(){
         return (
-            <Restaurants data={this.state.Restaurants} />
+            <div>
+                <Restaurants data={this.state.Restaurants} />
+                <br />
+                <h2>Create a Restaurant</h2>
+                <CustomForm/>
+            </div>
         );
     }
 }
